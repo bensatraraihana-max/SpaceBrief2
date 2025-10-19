@@ -329,12 +329,11 @@
 }
 
 .section3-left-side {
-  background-color: yellow;
   width: 50%;
   height: 100%;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  background: url(images/Astro\Kit\—\NASA\Dashboard\1\\(6\).png);
+  background: url(images/f.png);
   background-position: center;
   background-size: cover;
 }
@@ -1599,6 +1598,216 @@
   max-width: 380px;
   border-radius: 10px;
   object-fit: cover;
+}
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.square-icon {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.top-bar h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.planets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.planet-box {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planet-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.image-section {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.mercury-background {
+  background-color: #000;
+}
+
+.venus-background {
+  background: linear-gradient(135deg, #1a237e 0%, #c62828 100%);
+}
+
+.image-section img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.info-section {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 20px;
+  min-height: 180px;
+}
+
+.info-section h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.separator-dots {
+  width: 100%;
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #666 0px,
+    #666 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  margin-bottom: 15px;
+}
+
+.info-section p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #d0d0d0;
+  text-align: justify;
+}
+
+.summary-container {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  gap: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.summary-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.planet-visual {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.planet-visual img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-area {
+  flex: 1;
+  color: white;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.summary-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.summary-text {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #d0d0d0;
+  text-align: center;
+  font-weight: 300;
+}
+.summary-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.summary-container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: auto;
+  padding-top: 50px; /* espace depuis le contenu au-dessus */
+  padding-bottom: 20px;
 }
 /* END FOOTER */
 
